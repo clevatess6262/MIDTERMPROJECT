@@ -1,0 +1,178 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Roboto+Slab&display=swap');
+
+    :root {
+      --primary-color: #007f5f;
+      --secondary-color: #2b2d42;
+      --accent-color: #ff9f1c;
+      --bg-color: #f0f3f5;
+      --text-color: #222;
+      --section-bg: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg-color);
+      font-family: 'Poppins', sans-serif;
+      color: var(--text-color);
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: var(--secondary-color);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem 4rem;
+      position: relative;
+      clip-path: ellipse(100% 80% at 50% 0%);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+    }
+    header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid var(--accent-color);
+      margin-bottom: 1rem;
+      transition: transform 0.3s ease;
+    }
+    header img:hover {
+      transform: scale(1.1);
+    }
+    header h1 {
+      font-family: 'Roboto Slab', serif;
+      font-weight: 600;
+      font-size: 2.8rem;
+      margin: 0.2rem 0;
+    }
+    header p {
+      font-weight: 300;
+      font-size: 1.1rem;
+      letter-spacing: 1.2px;
+    }
+
+    nav {
+      background: var(--primary-color);
+      display: flex;
+      justify-content: center;
+      gap: 2.4rem;
+      padding: 1rem 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      color: #f0f3f5;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 1rem;
+      letter-spacing: 0.1em;
+      padding: 0.3rem 0;
+      border-bottom: 3px solid transparent;
+      transition: border-color 0.3s ease;
+    }
+    nav a:hover, nav a:focus {
+      border-color: var(--accent-color);
+    }
+
+    main {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      background: var(--section-bg);
+      padding: 2rem 2.5rem;
+      margin-bottom: 3rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      transition: box-shadow 0.3s ease;
+    }
+    section:hover {
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+    section h2 {
+      font-family: 'Roboto Slab', serif;
+      font-weight: 700;
+      font-size: 2rem;
+      border-left: 6px solid var(--accent-color);
+      padding-left: 1rem;
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+    }
+    ul {
+      padding-left: 1.4rem;
+      list-style-type: square;
+      color: var(--secondary-color);
+    }
+    ul li {
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .project-card {
+      background: var(--bg-color);
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 1rem 1.5rem 2rem;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+    }
+    .project-card h3 {
+      font-family: 'Roboto Slab', serif;
+      color: var(--secondary-color);
+      margin-bottom: 0.4rem;
+      font-size: 1.3rem;
+    }
+    .project-card p {
+      color: #555;
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+    .project-card a {
+      color: var(--primary-color);
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+      transition: border-color 0.3s ease;
+    }
+    .project-card a:hover {
+      border-color: var(--accent-color);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      background: var(--secondary-color);
+      color: white;
+      font-weight: 300;
+      font-size: 0.9rem;
+      margin-top: 4rem;
+    }
+
+    @media(max-width: 500px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      nav {
+        gap: 1rem;
+      }
+    }
+  </style>
